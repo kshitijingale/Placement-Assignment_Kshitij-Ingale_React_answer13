@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+body {
+  background-color: #af9d5a;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.textview {
+  display: inline-block;
+  margin: 2px;
+  width: 198px;
+  height: 29px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #23c4ed;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.equalButton {
+  cursor: pointer;
+  display: inline-block;
+  margin: 2px;
+  width: 42px;
+  height: 91px;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button {
+  cursor: pointer;
+  display: inline-block;
+  margin: 2px;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.button:active,
+.allclearButton:active,
+.equalButton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:hover,
+.equalButton:hover {
+  background-color: #1fcc4a;
+  border-top: 2px solid #383cc1;
+  border-right: 2px solid #383cc1;
+  border-bottom: 2px solid #ae5700;
+  border-left: 2px solid #ae5700;
+}
+
+.allclearButton {
+  border-radius: 10px;
+  color: #fff;
+  margin: 2px;
+  width: 42px;
+  height: 42px;
+  text-shadow: -1px -1px 0px #44006f;
+  background-color: #d20000;
+  border-top: 2px solid #ff8484;
+  border-right: 2px solid #ff8484;
+  border-bottom: 2px solid #800000;
+  border-left: 2px solid #800000;
+  box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #b00000;
+  outline: none;
+}
+
+.container {
+  background: #120e43;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
